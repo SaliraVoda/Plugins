@@ -110,7 +110,7 @@ if Config.BOT_USERNAME and tbot:
                 ],
                 [
                     Button.url("My Channel", f"https://t.me/{my_channel}"),
-                    Button.url("My Group", f"https://t.me/{my_group}"),
+                    Button.url("✨𝐑ᴇᴘᴏ💫", f"https://github.com/Madmax393/Hellbot-Extended"),
                 ],
             ]
             a = gvarstat("ALIVE_PIC")

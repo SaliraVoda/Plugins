@@ -6,14 +6,6 @@ import struct
 from random import randint
 
 try:
-    from instagrapi import Client as IClient
-    from instagrapi.exceptions import ChallengeRequired, TwoFactorRequired
-except:
-    os.system("pip install instagrapi")
-    from instagrapi import Client as IClient
-    from instagrapi.exceptions import ChallengeRequired, TwoFactorRequired
-
-try:
     from pyrogram import Client as PClient
 except:
     os.system("pip install pyrogram")
@@ -34,7 +26,7 @@ except:
 
 def main():
     print("T E A M    H E L L B O T   ! !")
-    print("Hello!! Welcome to HellBot Session Generator\n")
+    print("Hello!! Welcome to HellBot Extended Session Generator\n")
     print("Human Verification Required !!")
     while True:
         verify = int(randint(1, 50))
@@ -60,7 +52,7 @@ def main():
 
 
 def generate_hellbot_session():
-    print("!!! HELLBOT SESSION !!!")
+    print("!!! HELLBOT Extended SESSION !!!")
     print("One session for all HellBot's Project.")
     api_id = int(input("\nEnter APP ID here: "))
     api_hash = input("\nEnter API_HASH here: ")
@@ -70,7 +62,7 @@ def generate_hellbot_session():
         hell_session = hellbot_session(_session)
         hell.send_message(
             "me",
-            f"#HELLBOT_SESSION \n\n`{hell_session}`",
+            f"#HELLEXTENDED_SESSION \n\n`{hell_session}`",
         )
 
 

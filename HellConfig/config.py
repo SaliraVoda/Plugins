@@ -11,7 +11,7 @@ class Config(object):
     BOT_LIBRARY = os.environ.get("BOT_LIBRARY", None)
     BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
-    BUTTONS_IN_HELP = int(os.environ.get("BUTTONS_IN_HELP", 4))
+    BUTTONS_IN_HELP = int(os.environ.get("BUTTONS_IN_HELP", 5))
     DATABASE_URL = os.environ.get("DATABASE_URL", None)
     EMOJI_IN_HELP = os.environ.get("EMOJI_IN_HELP", "🌱")
     HANDLER = os.environ.get("HANDLER", ".")

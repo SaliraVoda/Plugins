@@ -27,7 +27,7 @@ async def kk(event):
 
 <b><i>HELP:</b></i> <i>If you want to know the commands for a plugin, do “ .plinfo <plugin name> ”
 
-<b><a href='https://t.me/its_hellbot'>@Its_HellBot</a></b>
+<b><a href='https://t.me/Hellbot_Extended'>@HellBot_Extended</a></b>
 """
     hell = await telegraph_paste("All available plugins in Hêllẞø†", OUTPUT)
     await eor(event, f"[All available plugins in Hêllẞø†]({hell})", link_preview=False)
@@ -39,7 +39,7 @@ async def send(event):
     ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
     message_id = event.reply_to_msg_id or event.message.id
     input_str = event.pattern_match.group(1)
-    omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention})** ⚡"
+    omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention}"
     the_plugin_file = "./TelethonHell/plugins/{}.py".format(input_str.lower())
     if os.path.exists(the_plugin_file):
         await event.client.send_file(

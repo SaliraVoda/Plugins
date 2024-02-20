@@ -24,7 +24,7 @@ ALIVE_TEMP = """
 """
 
 msg = """{}\n
-<b><i>🏅𝙷𝙴𝙻𝙻𝙱𝙾𝚃 𝙴𝚇𝚃𝙴𝙽𝙳𝙴𝙳 𝚂𝚃𝙰𝚃𝚄𝚂🏅</b></i>
+<b><i>🌱𝐁𝐎𝐓 𝐒𝐓𝐀𝐓𝐔𝐒🌱</b></i>
 <b>Telethon ≈</b>  <i>{}</i>
 <b>Extended ≈</b>  <i>{}</i>
 <b>Uptime ≈</b>  <i>{}</i>

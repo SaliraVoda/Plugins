@@ -20,11 +20,11 @@ ALIVE_TEMP = """
 ┣─ <b>» Uptime:</b> <i>{uptime}</i>
 ┣─ <b>» Ping:</b> <i>{ping}</i>
 ╰──────────────
-<b><i>»»» <a href='https://t.me/hellbot-ectended'>[𝙷𝙴𝙻𝙻𝙱𝙾𝚃 𝙴𝚇𝚃𝙴𝙽𝙳𝙴𝙳]</a> «««</i></b>
+<b><i>»»» <a href='https://t.me/hellbot-extended'>[𝙷𝙴𝙻𝙻𝙱𝙾𝚃 𝙴𝚇𝚃𝙴𝙽𝙳𝙴𝙳]</a> «««</i></b>
 """
 
 msg = """{}\n
-<b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
+<b><i>🏅𝙷𝙴𝙻𝙻𝙱𝙾𝚃 𝙴𝚇𝚃𝙴𝙽𝙳𝙴𝙳 𝚂𝚃𝙰𝚃𝚄𝚂🏅</b></i>
 <b>Telethon ≈</b>  <i>{}</i>
 <b>Extended ≈</b>  <i>{}</i>
 <b>Uptime ≈</b>  <i>{}</i>

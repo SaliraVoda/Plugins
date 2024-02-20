@@ -18,7 +18,7 @@ else:
 
 
 alive_txt = """{}\n
-<b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
+<b><i>🏅𝙷𝙴𝙻𝙻𝙱𝙾𝚃 𝙴𝚇𝚃𝙴𝙽𝙳𝙴𝙳 𝚂𝚃𝙰𝚃𝚄𝚂🏅</b></i>
 <b>Telethon ≈</b>  <i>{}</i>
 <b>Extended ≈</b>  <i>{}</i>
 <b>Uptime ≈</b>  <i>{}</i>

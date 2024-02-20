@@ -109,7 +109,7 @@ if Config.BOT_USERNAME and tbot:
                     Button.url(f"{alive_name}", f"tg://openmessage?user_id={ForGo10God}")
                 ],
                 [
-                    Button.url("My Channel", f"https://t.me/{my_channel}"),
+                    Button.url("🌱My Channel🌱", f"https://t.me/{my_channel}"),
                     Button.url("✨𝐑ᴇᴘᴏ💫", f"https://github.com/Madmax393/Hellbot-Extended"),
                 ],
             ]

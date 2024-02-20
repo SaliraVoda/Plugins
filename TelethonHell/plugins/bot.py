@@ -12,11 +12,11 @@ from TelethonHell.clients.client_list import get_user_id
 from TelethonHell.plugins import *
 
 ping_txt = """
-<b><i>__**❝❄ᑭ♨ɳց…!❄❞__**</b></i>
+<b><i>❝❄ᑭ♨ɳց…!❄❞</b></i>
 
-    🌱  <i>𝑺𝒑𝒆𝒆𝒅 :</i> <code>{}</code>
-    🌱  <i>𝒖𝒑𝒕𝒊𝒎𝒆 :</i> <code>{}</code>
-    🌱  <i>𝒐𝒘𝒏𝒆𝒓 :</i> {}
+    🌱  <i>𝐒𝐩𝐞𝐞𝐝 :</i> <code>{}</code>
+    🌱  <i>𝐮𝐩𝐭𝐢𝐦𝐞 :</i> <code>{}</code>
+    🌱  <i>𝐨𝐰𝐧𝐞𝐫 :</i> {}
 """
 
 

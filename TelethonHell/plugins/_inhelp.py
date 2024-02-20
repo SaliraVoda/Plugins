@@ -154,7 +154,7 @@ if Config.BOT_USERNAME and tbot:
         elif event.query.user_id in auth and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**",
+                text=f"**⚡ ʟɛɢɛռɖǟʀʏ ɦɛʟʟɮօȶ ɛӼȶɛռɖɛɖ ⚡**",
                 buttons=[
                     [Button.url("📑 Repo 📑", "https://github.com/madmax393/hellbot-extended")],
                     [Button.url("🌱HellBot Ext Channel🌱", "https://t.me/hellbot_extended")],

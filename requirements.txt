@@ -41,7 +41,6 @@ telegraph
 tgcrypto
 validators
 vcam
-WaifuPicsPython
 
 git+https://github.com/HellBoy-OP/py-googletrans
 git+https://github.com/HellBoy-OP/Telethon

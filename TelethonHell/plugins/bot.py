@@ -33,7 +33,7 @@ async def pong(event):
         PIC = choice(pic_list)
     else:
         PIC = None
-    hell = await eor(event, "`·.·★ ℘ıŋɠ ★·.·´")
+    hell = await eor(event, "`ᑭ♨ɳց…!´")
     ForGo10God, HELL_USER, hell_mention = await client_id(event, is_html=True)
     uptime = await get_time((time.time() - StartTime))
     end = datetime.datetime.now()

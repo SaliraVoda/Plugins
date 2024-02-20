@@ -13,7 +13,7 @@ class Config(object):
     BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
     BUTTONS_IN_HELP = int(os.environ.get("BUTTONS_IN_HELP", 7))
     DATABASE_URL = os.environ.get("DATABASE_URL", None)
-    EMOJI_IN_HELP = os.environ.get("EMOJI_IN_HELP", "✧")
+    EMOJI_IN_HELP = os.environ.get("EMOJI_IN_HELP", "🌱")
     HANDLER = os.environ.get("HANDLER", ".")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)

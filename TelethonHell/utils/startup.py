@@ -14,7 +14,7 @@ async def logger_id(client):
     try:
         grp = await client(
             functions.channels.CreateChannelRequest(
-                title="HELLEXTENDED LOGGER ⚡", about=desc, megagroup=True
+                title="EXTENDED LOGS ⚡", about=desc, megagroup=True
             )
         )
         grp_id = grp.chats[0].id

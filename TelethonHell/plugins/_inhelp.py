@@ -156,8 +156,8 @@ if Config.BOT_USERNAME and tbot:
                 title="Repository",
                 text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**",
                 buttons=[
-                    [Button.url("📑 Repo 📑", "https://t.me/Hellbot_Extended")],
-                    [Button.url("HellBot Network", "https://t.me/hellbot_extended")],
+                    [Button.url("📑 Repo 📑", "https://github.com/madmax393/hellbot-extended")],
+                    [Button.url("🌱HellBot Ext Channel🌱", "https://t.me/hellbot_extended")],
                 ],
             )
 

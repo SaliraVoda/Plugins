@@ -15,18 +15,18 @@ ALIVE_TEMP = """
 <b><i>↼ Øwñêr ⇀</i></b> : 『 {hell_mention} 』
 ╭──────────────
 ┣─ <b>» Telethon:</b> <i>{telethon_version}</i>
-┣─ <b>» Hêllẞø†:</b> <i>{hellbot_version}</i>
+┣─ <b>» Extended:</b> <i>{hellbot_version}</i>
 ┣─ <b>» Sudo:</b> <i>{is_sudo}</i>
 ┣─ <b>» Uptime:</b> <i>{uptime}</i>
 ┣─ <b>» Ping:</b> <i>{ping}</i>
 ╰──────────────
-<b><i>»»» <a href='https://t.me/its_hellbot'>[†hê Hêllẞø†]</a> «««</i></b>
+<b><i>»»» <a href='https://t.me/hellbot-ectended'>[𝙷𝙴𝙻𝙻𝙱𝙾𝚃 𝙴𝚇𝚃𝙴𝙽𝙳𝙴𝙳]</a> «««</i></b>
 """
 
 msg = """{}\n
 <b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
 <b>Telethon ≈</b>  <i>{}</i>
-<b>Hêllẞø† ≈</b>  <i>{}</i>
+<b>Extended ≈</b>  <i>{}</i>
 <b>Uptime ≈</b>  <i>{}</i>
 <b>Abuse ≈</b>  <i>{}</i>
 <b>Sudo ≈</b>  <i>{}</i>
@@ -65,7 +65,7 @@ async def _(event):
                 pic_list.append(c)
         PIC = random.choice(pic_list)
     else:
-        PIC = "https://te.legra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+        PIC = "https://te.legra.ph/file/8b6cf36a2890f05f840aa.mp4"
     end = datetime.datetime.now()
     ping = (end - start).microseconds / 1000
     alive = alive_temp.format(
@@ -86,11 +86,11 @@ async def _(event):
     await hell.delete()
 
 
-@hell_cmd(pattern="hell$")
+@hell_cmd(pattern="extended$")
 async def hell_a(event):
     userid, _, _ = await client_id(event)
     uptime = await get_time((time.time() - StartTime))
-    am = gvarstat("ALIVE_MSG") or "<b>»» нєℓℓвσт ιѕ σиℓιиє ««</b>"
+    am = gvarstat("ALIVE_MSG") or "<b>»» ɦɛʟʟ ɛӼȶɛռɖɛɖ ɨֆ օռʟɨռɛ ««</b>"
     try:
         hell = await event.client.inline_query(Config.BOT_USERNAME, "alive")
         await hell[0].click(event.chat_id)

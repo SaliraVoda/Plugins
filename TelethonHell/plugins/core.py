@@ -38,15 +38,14 @@ async def send(event):
     cids = await client_id(event)
     ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
     message_id = event.reply_to_msg_id or event.message.id
-    thumb = None
     input_str = event.pattern_match.group(1)
     omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention})** ⚡"
-    the_plugin_file = "./TelethonHell/plugins/{}.py".format(None.lower())
+    the_plugin_file = "./TelethonHell/plugins/{}.py".format(input_str.lower())
     if os.path.exists(the_plugin_file):
         await event.client.send_file(
             event.chat_id,
             the_plugin_file,
-            thumb=thumb,
+            thumb=None,
             caption=omk,
             force_document=True,
             allow_cache=False,

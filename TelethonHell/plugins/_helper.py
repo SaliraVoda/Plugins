@@ -6,9 +6,9 @@ from TelethonHell.plugins import *
 
 
 msg = f"""
-**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**
-  •        [📑 Repo 📑](https://t.me/Hellbot_Extended)
-  •        [HellBot Network](https://t.me/Hellbot_Extended)
+**⚡ ʟɛɢɛռɖǟʀʏ ɦɛʟʟɮօȶ ɛӼȶɛռɖɛɖ ⚡**
+  •        [📑 Repo 📑](https://github.com/MadMax393/hellbot_extended)
+  •        [HellBot Ext Network](https://t.me/Hellbot_Extended)
   •  ©️ {hell_channel} ™
 """
 

@@ -109,7 +109,7 @@ if Config.BOT_USERNAME and tbot:
             )
             alv_btn = [
                 [
-                    Button.url(f"{alive_name}", f"tg://openmessage?user_id={ForGo10God}")
+                    Button.url(f"🔰{alive_name}", f"tg://openmessage?user_id={ForGo10God}")
                 ],
                 [
                     Button.url("🌱My Channel🌱", f"https://t.me/{my_channel}"),

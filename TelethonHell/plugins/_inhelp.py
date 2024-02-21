@@ -98,7 +98,7 @@ if Config.BOT_USERNAME and tbot:
                 )
         elif event.query.user_id in auth and query == "alive":
             uptime = await get_time((time.time() - StartTime))
-            alive_msg = gvarstat("ALIVE_MSG") or "⚡️ℍ𝕖𝕝𝕝𝕓𝕠𝕥 𝔼𝕩𝕥𝕖𝕟𝕕𝕖𝕕 𝕚𝕤 𝕆𝕟𝕝𝕚𝕟𝕖⚡️"
+            alive_msg = gvarstat("ALIVE_MSG") or "✨𝐇𝐞𝐥𝐥𝐁𝐨𝐭 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐢𝐬 𝐎𝐧𝐥𝐢𝐧𝐞✨"
             alive_name = gvarstat("ALIVE_NAME") or HELL_USER
             he_ll = alive_txt.format(
                 alive_msg, telethon_version, hellbot_version, uptime, abuse_m, is_sudo

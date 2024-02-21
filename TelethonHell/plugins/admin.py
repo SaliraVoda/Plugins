@@ -154,7 +154,7 @@ async def fullpromote(event):
     hellevent = await eor(event, "`Promoting User...`")
     user, rank = await get_user_from_event(event)
     if not rank:
-        rank = "ǟɖʍɨռ"
+        rank = "ʍǟռǟɢɛʀ"
     if not user:
         return
     try:
@@ -166,7 +166,7 @@ async def fullpromote(event):
         return await parse_error(hellevent, NO_PERM)
     await event.client.send_message(
         Config.LOGGER_ID,
-        "#PROMOTE\n"
+        "#FULLPROMOTE\n"
         f"\n**USER:** [{user.first_name}](tg://user?id={user.id})"
         f"\n**CHAT:** {event.chat.title}(`{event.chat_id}`)",
     )

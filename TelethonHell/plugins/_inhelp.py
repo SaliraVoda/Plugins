@@ -18,11 +18,11 @@ else:
 
 
 alive_txt = """{}\n
-╭─⊸⌊Telethon⌉ ➢ </b>  <i>{}</i>
-├─⊸⌊Extended⌉ ➢ </b>  <i>{}</i>
-├─⊸⌊Uptime⌉ ➢ </b>  <i>{}</i>
-├─⊸⌊Abuse⌉ ➢ </b>  <i>{}</i>
-╰─⊸⌊Uptime⌉ ➢ </b>  <i>{}</i>
+╭─⊸⌊`Telethon`⌉ ➢ </b>  `<i>{}</i>`
+├─⊸⌊`Extended`⌉ ➢ </b>  `<i>{}</i>`
+├─⊸⌊`Uptime`⌉ ➢ </b>  `<i>{}</i>`
+├─⊸⌊`Abuse`⌉ ➢ </b>  `<i>{}</i>`
+╰─⊸⌊`Uptime`⌉ ➢ </b>  `<i>{}</i>`
 """
 
 

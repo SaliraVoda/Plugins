@@ -167,7 +167,7 @@ if Config.BOT_USERNAME and tbot:
         else:
             result = builder.article(
                 "@HellBot_Extended",
-                text="""**Hey! This is [Hêllẞø†](https://t.me/its_hellbot) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [Hêllẞø†](https://t.me/hellbot_extended) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         Button.url("• Updates •", "https://t.me/Hellbot_Extended"),

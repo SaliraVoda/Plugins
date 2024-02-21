@@ -125,7 +125,7 @@ if Config.BOT_USERNAME and tbot:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://te.legra.ph/file/8b6cf36a2890f05f840aa.mp4"
+                PIC = "https://te.legra.ph/file/9ff6cc15f4ea1471749cb.mp4"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     PIC,

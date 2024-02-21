@@ -18,13 +18,11 @@ else:
 
 
 alive_txt = """{}\n
-╭──────────────
-┣─ <b>Telethon ≈</b>  <i>{}</i>
-┣─ <b>Extended ≈</b>  <i>{}</i>
-┣─ <b>Sudo ≈</b>  <i>{}</i>
-┣─ <b>Uptime ≈</b>  <i>{}</i>
-┣─ <b>Abuse ≈</b>  <i>{}</i>
-╰──────────────
+╭─⊸⌊Telethon⌉ ➢ </b>  <i>{}</i>
+├─⊸⌊Extended⌉ ➢ </b>  <i>{}</i>
+├─⊸⌊Uptime⌉ ➢ </b>  <i>{}</i>
+├─⊸⌊Abuse⌉ ➢ </b>  <i>{}</i>
+╰─⊸⌊Uptime⌉ ➢ </b>  <i>{}</i>
 """
 
 

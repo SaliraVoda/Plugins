@@ -48,7 +48,7 @@ async def songs(event):
             f"{audio_file}.mp3",
             supports_streaming=True,
             caption=f"**✘ Song -** [{title}]({link}) \n**✘ Views -** `{views}` \n**✘ Duration -** `{duration}` \n\n**« ✘ »** {hell_mention}",
-            thumb=thumb_name,
+            thumb=None,
             reply_to=reply,
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
                 progress(d, t, hell, c_time, upload_text)
@@ -57,7 +57,7 @@ async def songs(event):
                 DocumentAttributeAudio(
                     duration=int(info_dict['duration']),
                     title=str(info_dict['title']),
-                    performer=perf,
+                    performer=None,
                 )
             ],
         )

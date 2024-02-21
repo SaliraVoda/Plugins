@@ -11,16 +11,18 @@ from TelethonHell.plugins import *
 # -------------------------------------------------------------------------------
 
 ALIVE_TEMP = """
-<b>🍿𝐇𝐞𝐥𝐥𝐁𝐨𝐭 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐢𝐬 𝐎𝐧𝐥𝐢𝐧𝐞🍿</b>\n
-<b><i>💫Owner ⇀</i></b> : 『 {hell_mention} 』
-╭──────────────
-┣─ <b>» Telethon:</b> <i>{telethon_version}</i>
-┣─ <b>» Extended:</b> <i>{hellbot_version}</i>
-┣─ <b>» Sudo:</b> <i>{is_sudo}</i>
-┣─ <b>» Uptime:</b> <i>{uptime}</i>
-┣─ <b>» Ping:</b> <i>{ping}</i>
-╰──────────────
-<b><i>»»» <a href='https://t.me/hellbot_extended'>[𝙷𝙴𝙻𝙻𝙱𝙾𝚃 𝙴𝚇𝚃𝙴𝙽𝙳𝙴𝙳]</a> «««</i></b>
+<b>🦋𝐇𝐞𝐥𝐥𝐁𝐨𝐭 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐢𝐬 𝐎𝐧𝐥𝐢𝐧𝐞🦋</b>\n
+                         
+╔───*.·:·.✧✦✧.·:·.*────╗
+┣━ <b> ⁭⁫Tᴇʟᴇᴛʜᴏɴ :</b> {telethon_version}
+┣━ <b> Exᴛᴇɴᴅᴇᴅ :</b> {hellbot_version}
+┣━ <b> ⁭⁫Sᴜᴅᴏ :</b> {is_sudo}
+┣━ ⁭⁫<b> Uᴘᴛɪᴍᴇ :</b> {uptime}
+┣━ ⁭⁫<b> Pɪɴɢ :</b> {ping}
+╚───*.·:·.✧✦✧.·:·.*────╝
+  ┏━━━━━━━━━━━━━━┓
+  ┣ ⁭<b> 💫Oᴡɴᴇʀ :</b> {hell_mention}
+  ┗━━━━━━━━━━━━━━┛
 """
 
 msg = """{}\n

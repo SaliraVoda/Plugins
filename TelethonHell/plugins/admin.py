@@ -105,8 +105,8 @@ async def promote(event):
     new_rights = ChatAdminRights(
         add_admins=False,
         invite_users=True,
-        change_info=False,
-        ban_users=True,
+        change_info=True,
+        ban_users=False,
         delete_messages=True,
         pin_messages=True,
         manage_call=True,
@@ -121,6 +121,46 @@ async def promote(event):
         await event.client(EditAdminRequest(event.chat_id, user.id, new_rights, rank))
         await hellevent.edit(
             f"**🔥 Promoted  [{user.first_name}](tg://user?id={user.id})  Successfully In**  `{event.chat.title}`!! \n**Admin Tag :**  `{rank}`"
+        )
+    except BadRequestError:
+        return await parse_error(hellevent, NO_PERM)
+    await event.client.send_message(
+        Config.LOGGER_ID,
+        "#PROMOTE\n"
+        f"\n**USER:** [{user.first_name}](tg://user?id={user.id})"
+        f"\n**CHAT:** {event.chat.title}(`{event.chat_id}`)",
+    )
+  
+
+@hell_cmd(pattern="fullpromote(?:\s|$)([\s\S]*)")
+@errors_handler
+async def fullpromote(event):
+    if event.fwd_from:
+        return
+    chat = await event.get_chat()
+    admin = chat.admin_rights
+    creator = chat.creator
+    if not admin and not creator:
+        return await parse_error(event, NO_ADMIN)
+    new_rights = ChatAdminRights(
+        add_admins=True,
+        invite_users=True,
+        change_info=True,
+        ban_users=True,
+        delete_messages=True,
+        pin_messages=True,
+        manage_call=True,
+    )
+    hellevent = await eor(event, "`Promoting User...`")
+    user, rank = await get_user_from_event(event)
+    if not rank:
+        rank = "ǟɖʍɨռ"
+    if not user:
+        return
+    try:
+        await event.client(EditAdminRequest(event.chat_id, user.id, new_rights, rank))
+        await hellevent.edit(
+            f"**🔥 Promoted  [{user.first_name}](tg://user?id={user.id})  Successfully with Full Admin Rights In**  `{event.chat.title}`!! \n**Admin Tag :**  `{rank}`"
         )
     except BadRequestError:
         return await parse_error(hellevent, NO_PERM)

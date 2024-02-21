@@ -166,7 +166,7 @@ if Config.BOT_USERNAME and tbot:
 
         else:
             result = builder.article(
-                "@Its_HellBot",
+                "@HellBot_Extended",
                 text="""**Hey! This is [Hêllẞø†](https://t.me/its_hellbot) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
@@ -174,8 +174,8 @@ if Config.BOT_USERNAME and tbot:
                         Button.url("• Chat •", "https://t.me/hellbot_Extended"),
                     ],
                     [
-                        Button.url("• Repo •", "https://github.com/The-HellBot/HellBot"),
-                        Button.url("• Docs •", "https://hellbot.tech"),
+                        Button.url("• Repo •", "https://github.com/Madmax393/hellbot-extended"),
+                      #  Button.url("• Docs •", "https://hellbot.tech"),
                     ],
                     [
                         Button.url("◈ HellBot Network ◈", "https://t.me/hellbot_extended"),
@@ -204,7 +204,7 @@ if Config.BOT_USERNAME and tbot:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://te.legra.ph/file/3a48c5756d2a9763eafaf.jpg"
+                help_pic = "https://te.legra.ph/file/183f3f40151a97d7e6279.png"
 
             if help_pic == "DISABLE":
                 await event.edit(

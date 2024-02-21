@@ -19,11 +19,11 @@ else:
 
 alive_txt = """{}\n
 ╭─────────⊸
-├⊸<b>✨𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍:</b> <i>{}</i>
-├⊸<b>✨𝐄𝐗𝐓𝐄𝐍𝐃𝐄𝐃:</b> <i>{}</i>
-├⊸<b>✨𝐔𝐏𝐓𝐈𝐌𝐄:</b> <i>{}</i>
-├⊸<b>✨𝐀𝐁𝐔𝐒𝐄:</b> <i>{}</i>
-├⊸<b>✨𝐒𝐔𝐃𝐎:</b> <i>{}</i>
+├⊸<b>✨𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍:</b> {}
+├⊸<b>✨𝐄𝐗𝐓𝐄𝐍𝐃𝐄𝐃:</b> {}
+├⊸<b>✨𝐔𝐏𝐓𝐈𝐌𝐄:</b> {}
+├⊸<b>✨𝐀𝐁𝐔𝐒𝐄:</b> {}
+├⊸<b>✨𝐒𝐔𝐃𝐎:</b> {}
 ╰──────────⊸          ↠━━━━━ღ◆ღ━━━━━↞
 """
 
@@ -100,7 +100,7 @@ if Config.BOT_USERNAME and tbot:
                 )
         elif event.query.user_id in auth and query == "alive":
             uptime = await get_time((time.time() - StartTime))
-            alive_msg = gvarstat("ALIVE_MSG") or "✨𝐇𝐞𝐥𝐥𝐁𝐨𝐭 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐢𝐬 𝐎𝐧𝐥𝐢𝐧𝐞✨"
+            alive_msg = gvarstat("ALIVE_MSG") or "🔥 𝐇𝐞𝐥𝐥𝐁𝐨𝐭 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐢𝐬 𝐎𝐧𝐥𝐢𝐧𝐞「🇮🇳」"
             alive_name = gvarstat("ALIVE_NAME") or HELL_USER
             he_ll = alive_txt.format(
                 alive_msg, telethon_version, hellbot_version, uptime, abuse_m, is_sudo

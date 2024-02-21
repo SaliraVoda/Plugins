@@ -15,11 +15,11 @@ ALIVE_TEMP = """
 ↠━━━━━━━━◆━━━━━━━━↞
                          
 ╔───*.·:·.✧✦✧.·:·.*────╗
-┣━ <b>🌱 Tᴇʟᴇᴛʜᴏɴ :</b> {telethon_version}
-┣━ <b>🌱 Exᴛᴇɴᴅᴇᴅ :</b> {hellbot_version}
-┣━ <b>🌱 ⁭⁫Sᴜᴅᴏ :</b> {is_sudo}
-┣━ ⁭⁫<b>🌱 Uᴘᴛɪᴍᴇ :</b> {uptime}
-┣━ ⁭⁫<b>🌱 Pɪɴɢ :</b> {ping}
+┣━ <b>🌱 Tᴇʟᴇᴛʜᴏɴ :</b>  <code>{telethon_version}</code>
+┣━ <b>🌱 Exᴛᴇɴᴅᴇᴅ :</b>  <code>{hellbot_version}</code>
+┣━ <b>🌱 ⁭⁫Sᴜᴅᴏ :</b>  <code>{is_sudo}</code>
+┣━ ⁭⁫<b>🌱 Uᴘᴛɪᴍᴇ :</b>  <code>{uptime}</code>
+┣━ ⁭⁫<b>🌱 Pɪɴɢ :</b>  <code>{ping}</code>
 ╚───*.·:·.✧✦✧.·:·.*────╝
   ┏━━━━━━━━━━━━━━┓
   ┣ ⁭<b> 💫Oᴡɴᴇʀ :</b> {hell_mention}

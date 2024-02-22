@@ -68,7 +68,7 @@ async def _(event):
                 pic_list.append(c)
         PIC = random.choice(pic_list)
     else:
-        PIC = "https://te.legra.ph/file/99c2f3549cc9a9a4e7044.mp4"
+        PIC = "https://te.legra.ph/file/e9b59d8c9fcbe63cebbd1.mp4"
     end = datetime.datetime.now()
     ping = (end - start).microseconds / 1000
     alive = alive_temp.format(

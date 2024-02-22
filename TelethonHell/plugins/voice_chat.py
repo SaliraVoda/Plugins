@@ -8,7 +8,7 @@ from TelethonHell.plugins import *
 
 async def getvc(event):
     chat_ = await event.client(GetFullChannelRequest(event.chat_id))
-    _chat = await event.client(GetGroupCallRequest(chat_.full_chat.call))
+    _chat = await event.client(GetGroupCallRequest(chat_.full_chat.call, limit=0))
     return _chat.call
 
 

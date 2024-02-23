@@ -46,7 +46,7 @@ async def _(event):
                     second = await conv.get_response()
                     third = await conv.send_message(Config.BOT_USERNAME)
                     fourth = await conv.get_response()
-                    fifth = await conv.send_message(perf)
+                    fifth = await conv.send_message("Extended Userbot")
                     sixth = await conv.get_response()
                     await bot.send_read_acknowledge(conv.chat_id)
                 except YouBlockedUserError:

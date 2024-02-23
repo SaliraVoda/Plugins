@@ -8,7 +8,7 @@ from HellConfig import Config
 
 
 def validate_session(session):
-    if "==hell" and "bot==" in session.lower():
+    if "==extd" and "bot==" in session.lower():
         new_session = session[6:-5]
         return str(new_session)
     else:

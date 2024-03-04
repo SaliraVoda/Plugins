@@ -703,7 +703,8 @@ async def do_pm_permit_action(chat_ids, event, client):
         except:
             pass
     getuser = await event.client(GetFullUserRequest(await event.get_input_chat()))
-    firstname = firstname = getuser.users[0].first_name
+    firstname = getuser.users[0].first_name
+    user_id = event.chat_id
     CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
     thee_message = f"🔰 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐏𝐌 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲\n\n 👋 Hello {firstname}, This is an automated message and you are requested not to spam here. Please wait until my Master approves you to pm else you'll be blocked automatically!!"
     if CSTM_PMP:

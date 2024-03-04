@@ -702,7 +702,10 @@ async def do_pm_permit_action(chat_ids, event, client):
             return
         except:
             pass
-    thee_message = "🔰 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐏𝐌 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲\n\n <code>👋 Hello, This is an automated message and you are requested not to spam here. Please wait until my Master approves you to pm else you'll be blocked automatically!!</code>"     
+    CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
+    thee_message = "🔰 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐏𝐌 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲\n\n <code>👋 Hello, This is an automated message and you are requested not to spam here. Please wait until my Master approves you to pm else you'll be blocked automatically!!</code>"
+    if CSTM_PMP:
+        HELL_FIRST += f"\n\n{CSTM_PMP}"
     PIC = "https://te.legra.ph/file/f667c4c121294c863e068.jpg"
     tap = await event.client.send_file(
         event.chat_id,

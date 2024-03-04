@@ -8,8 +8,10 @@ db_config = [
     "ALIVE_TEMPLATE",
     "BAN_PIC",
     "BIO_MSG",
+    "CUSTOM_PMPERMIT",
     "HELP_PIC",
     "PING_PIC",
+    "PMPERMIT_PIC",
     "STICKER_PACKNAME",
     "USE_EVAL",
 ]
@@ -35,6 +37,7 @@ os_config = [
     "MY_CHANNEL",
     "MY_GROUP",
     "PLUGIN_CHANNEL",
+    "PM_PERMIT",
     "REMOVE_BG_API",
     "HELLBOT_SESSION",
     "SESSION_2",

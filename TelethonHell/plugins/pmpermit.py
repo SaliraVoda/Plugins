@@ -706,7 +706,7 @@ async def do_pm_permit_action(chat_ids, event, client):
     firstname = getuser.users[0].first_name
     ForGo10God, _, hell_mention = await client_id(event)
     CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-    thee_message = f"🔰 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐏𝐌 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲\n\n 👋 Hello {firstname}, This is an automated message on behalf of {hell_mention} and you are requested not to spam here. Please wait until my Master approves you to pm else you'll be blocked automatically!!"
+    thee_message = f"🔰 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐏𝐌 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲\n\n 👋 Hello [{firstname}](tg://user?id={event.chat_id}), This is an automated message on behalf of {hell_mention} and you are requested not to spam here. Please wait until my Master approves you to pm else you'll be blocked automatically!!"
     if CSTM_PMP:
         thee_message = f"🔰 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐏𝐌 𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲\n\n <code>{CSTM_PMP}</code>"
     PIC = gvarstat("PMPERMIT_PIC") or "https://te.legra.ph/file/f667c4c121294c863e068.jpg"

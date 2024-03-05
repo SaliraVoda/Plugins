@@ -46,7 +46,7 @@ async def download_video(event):
                     DocumentAttributeAudio(
                         duration=int(ytdl_data["duration"]),
                         title=str(ytdl_data["title"]),
-                        performer=perf,
+                        performer=None,
                     )
                 ],
                 progress_callback=lambda d, t: asyncio.get_event_loop().create_task(

@@ -75,6 +75,7 @@ async def logger_check(bot):
 # Sends the startup message to logger group
 async def start_msg(client, pic, version, total):
     is_sudo = "True" if Config.SUDO_USERS else "False"
+    pic = "https://telegra.ph/file/86dea1a7360d002f3fd10.jpg"
     text = f"""
 #START
 

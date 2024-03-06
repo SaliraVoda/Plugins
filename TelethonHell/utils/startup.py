@@ -3,7 +3,6 @@ from telethon import Button
 from telethon.tl import functions
 from telethon.tl.types import ChatAdminRights
 from TelethonHell.clients.logger import LOGGER as LOGS
-from telethon import utils
 from TelethonHell.DB.gvar_sql import addgvar, gvarstat
 from TelethonHell.helpers.int_str import make_int
 from TelethonHell.version import __telever__
@@ -77,7 +76,6 @@ async def logger_check(bot):
 async def start_msg(client, pic, version, total):
     is_sudo = "True" if Config.SUDO_USERS else "False"
     pic = "https://telegra.ph/file/86dea1a7360d002f3fd10.jpg"
-    ForGo10God, _, hell_mention = await client_id(event)
     text = f"""
 𝐄𝐗𝐓𝐄𝐍𝐃𝐄𝐃 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 🙌
 →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→
@@ -89,7 +87,7 @@ async def start_msg(client, pic, version, total):
 ༻ <b><i>Library:</b></i> <code>Telethon - {__telever__}</code>
 ╚════✣✤༻⋇༺✤✣════╝
 ╔════✣✤༻⋇༺✤✣════╗
-    ༻ 𝐎𝐰𝐧𝐞𝐫 : {hell_mention}
+    ༻ <b><i>»» <u><a href='https://t.me/Extended_Userbot'>𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐔𝐬𝐞𝐫𝐛𝐨𝐭</a></u> ««</i></b> ༺
 ╚════✣✤༻⋇༺✤✣════╝
 
 """

@@ -77,9 +77,7 @@ async def start_msg(client, pic, version, total):
     is_sudo = "True" if Config.SUDO_USERS else "False"
     pic = "https://telegra.ph/file/86dea1a7360d002f3fd10.jpg"
     text = f"""
-𝐄𝐗𝐓𝐄𝐍𝐃𝐄𝐃 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 🙌
-→→→→→→→→→→→→→→→→→→→→→→→→→→→→→→
-
+⚠️ 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 ⚠️
 ╔════✣✤༻⋇༺✤✣════╗
 ༻ <b><i>Version:</b></i> <code>{version}</code>
 ༻ <b><i>Clients:</b></i> <code>{str(total)}</code>

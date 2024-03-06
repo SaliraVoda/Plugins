@@ -58,7 +58,9 @@ async def send(event):
 @hell_cmd(pattern="sendall$")
 async def sendall(event):
     directory_path = "./TelethonHell/plugins/"
-    for file_name in os.listdir(directory_path):
+    files = os.listdir(directory_path)
+    files.sort()  # This will sort the files in alphabetical order
+    for file_name in files:
         if file_name.endswith('.py'):  # This checks for python files
             await event.client.send_file(event.chat_id, directory_path + file_name)
         else:

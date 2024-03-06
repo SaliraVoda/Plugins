@@ -49,12 +49,12 @@ async def delete_it(event):
                 await msg_src.delete()
                 if BOTLOG:
                     await event.client.send_message(
-                        BOTLOG_CHATID, "#DEL \n`Deletion of message was successful`"
+                        Config.LOGGER_ID, "#DEL \n`Deletion of message was successful`"
                     )
             except rpcbaseerrors.BadRequestError:
                 if BOTLOG:
                     await event.client.send_message(
-                        BOTLOG_CHATID,
+                        Config.LOGGER_ID,
                         "`Well, I can't delete a message. I am not an admin`",
                     )
         elif input_str:

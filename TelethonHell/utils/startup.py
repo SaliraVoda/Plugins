@@ -76,7 +76,7 @@ async def logger_check(bot):
 async def start_msg(client, pic, version, total):
     is_sudo = "True" if Config.SUDO_USERS else "False"
     pic = "https://telegra.ph/file/86dea1a7360d002f3fd10.jpg"
-     ForGo10God, _, hell_mention = await client_id(event)
+    ForGo10God, _, hell_mention = await client_id(event)
     text = f"""
 𝐄𝐗𝐓𝐄𝐍𝐃𝐄𝐃 𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐒𝐓𝐀𝐑𝐓𝐄𝐃 🙌
 →→→→→→→→→→→→→→→→→→→→→→→→→→→→→→

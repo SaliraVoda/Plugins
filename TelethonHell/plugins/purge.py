@@ -66,7 +66,7 @@ async def delete_it(event):
                 await event.delete()
                 if BOTLOG:
                     await event.client.send_message(
-                        BOTLOG_CHATID, "#DEL \n`Deletion of message was successful`"
+                        Config.LOGGER_ID, "#DEL \n`Deletion of message was successful`"
                     )
             except rpcbaseerrors.BadRequestError:
                 await eor(event, "`Well, I can't delete a message`")
@@ -127,7 +127,7 @@ async def purge_to(event):
         )
         if BOTLOG:
             await event.client.send_message(
-                BOTLOG_CHATID,
+                Config.LOGGER_ID,
                 "#PURGE \n`Purge of " + str(count) + " messages done successfully.`",
             )
     except Exception as e:
@@ -152,7 +152,7 @@ async def purgeme(event):
     )
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID,
+            Config.LOGGER_ID,
             "#PURGEME \n`Purge of " + str(count) + " messages done successfully.`",
         )
     await sleep(5)
@@ -373,7 +373,7 @@ async def fastpurger(event):  # sourcery no-metrics
     hi = await event.client.send_message(event.chat_id, result)
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID,
+            Config.LOGGER_ID,
             f"#PURGE \n{result}",
         )
     await sleep(5)
@@ -472,7 +472,7 @@ async def fast_purger(event):  # sourcery no-metrics
     hi = await event.client.send_message(event.chat_id, result)
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID,
+            Config.LOGGER_ID,
             f"#UPURGE \n{result}",
         )
     await sleep(5)

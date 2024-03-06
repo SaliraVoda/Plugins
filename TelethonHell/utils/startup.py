@@ -3,7 +3,7 @@ from telethon import Button
 from telethon.tl import functions
 from telethon.tl.types import ChatAdminRights
 from TelethonHell.clients.logger import LOGGER as LOGS
-from telethon.tl.functions.users import GetFullUserRequest
+from TelethonHell.clients.client_list import client_id
 from TelethonHell.DB.gvar_sql import addgvar, gvarstat
 from TelethonHell.helpers.int_str import make_int
 from TelethonHell.version import __telever__
